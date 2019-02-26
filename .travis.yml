@@ -2,7 +2,9 @@ language: erlang
 sudo: false
 
 os: linux
-otp_release: 20.0
+otp_release:
+  - 21.2.6
+  - 20.0
 
 matrix:
   include:
@@ -10,6 +12,8 @@ matrix:
       otp_release: 19.3
     - os: linux
       otp_release: 20.0
+    - os: linux
+      otp_release: 21.2.6
 
 cache:
   directories:
